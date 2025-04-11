@@ -9,12 +9,10 @@
 
 :root {
     --bg-color: #080800;
-    --segond-bg-color: #131313;
+    --second-bg-color: #131313;
     --text-color: white;
     --main-color: #2795f6;
 }
-
-;
 
 html {
     font-size: 60%;
@@ -24,7 +22,8 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+    background: var(--second-bg-color);
+
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
 
@@ -61,7 +60,7 @@ body {
 }
 
 .navbar a {
-    font-size: 1.8 rem;
+    font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
@@ -161,7 +160,7 @@ span {
     font-size: 2.5rem;
     border-radius: 50%;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem o;
+    margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in;
 
 }
@@ -227,7 +226,7 @@ span {
 }
 
 .text-animation span::before {
-    content: "web develloper";
+    content: "tax consultant";
     color: var(--main-color);
     animation: words 20s infinite;
 
@@ -245,7 +244,7 @@ span {
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 
 }
-
+/* 
 @keyframes cursor {
     to {
         border-left: 2px solid var(--main-color);
@@ -276,6 +275,11 @@ span {
         content: "";
     }
 
+} */
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--main-color);
+    }
 }
 
 @keyframes typing {
@@ -491,6 +495,9 @@ span {
     gap: 3rem;
 }
 
+.testimonials .wrapper {
+    grid-template-columns: 1fr;
+}
 .testimonial-item {
     min-height: 550px;
     max-width: 450px;
@@ -528,26 +535,48 @@ span {
     }
 }
 
-/* Responsive Design for Mobile Phones (up to 480px) */
+/* Responsive Design pour téléphones (jusqu'à 480px) */
 @media (max-width: 480px) {
     .wrapper {
-        grid-template-columns: 1fr;
-        /* Single column on mobile screens */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre horizontalement les items */
         gap: 1.5rem;
-        /* Adjust gap for mobile */
+        padding: 0 10px; /* Ajoute un peu de padding sur les côtés pour éviter que ça touche les bords */
     }
 
     .testimonial-item {
-        max-width: 100%;
-        /* Ensure items take full width of container */
+        width: 100%;
+        max-width: 320px; /* Limite la largeur max pour un meilleur rendu sur petits écrans */
         padding: 15px;
-        /* Further reduce padding for small screens */
+        box-sizing: border-box;
         min-height: auto;
-        /* Allow flexible height */
-        margin: 0;
-        /* Remove margin for better fit */
+        margin: 0 auto; /* Centre horizontalement */
+        text-align: center; /* Centre le contenu à l’intérieur */
+    }
+
+    .testimonial-item img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-item h2 {
+        font-size: 1rem;
+    }
+
+    .testimonial-item p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .rating i {
+        font-size: 1rem;
     }
 }
+
 
 
 .testimonial-item:hover {
@@ -691,9 +720,10 @@ span {
 }
 
 @media(max-width:991px) {
-    header {
+    .header {
         padding: 2rem 3%;
     }
+
 
     section {
         padding: 10rem 3%;
@@ -850,6 +880,7 @@ span {
 @media (max-width: 390px) {
     .testimonials .wrapper {
         grid-template-columns: 1fr;
+
     }
 
     .testimonial-item {
