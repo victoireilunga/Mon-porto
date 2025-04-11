@@ -15,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
 
 </head>
-<body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+<body>
 
     <header class="header">
         <a href="#home" class="logo">victoire <span>ilunga</span></a>
@@ -28,7 +29,7 @@
             <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contacts</a>
         </nav>
-        
+
     </header>
     <section class="home" id="home">
         <div class="home-content">
@@ -69,10 +70,10 @@
                 <div class="timeline-date">2022
                 </div>
                 <div class="timeline-content">
-                    <h3>Certification de Diplome de Graduat En Douane</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil incidunt facilis quasi
-                        beatae fugiat quos nisi mollitia, ipsa, corrupti sint aut deserunt nulla doloremque sapiente.
-                        Quasi recusandae consequuntur expedita!</p>
+                    <h3>Licence en fiscaliste des entreprises BAC+5</h3>
+                    <p>Fort de deux ans d'expérience, notamment au sein d'un cabinet d'audit, je suis prêt à relever
+                        chaque défi et à offrir des solutions
+                        adaptées aux besoins de tous les clients qui me font confiance.</p>
 
                 </div>
             </div>
@@ -81,22 +82,11 @@
                 <div class="timeline-date">2023
                 </div>
                 <div class="timeline-content">
-                    <h3>Certification Kinshasa Digital Academy KADEA</h3>
-                    <p>Développeur web et Mobile
-                        De l’analyse du besoin à la mise en ligne, en passant par l’interface et la base de données,
-                        le·la développeur·se web et web mobile conçoit et programme des applications web et mobile.!</p>
-                        
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024
-                </div>
-                <div class="timeline-content">
-                    <h3>Certification En Marketing Digital</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil incidunt facilis quasi
-                        beatae fugiat quos nisi mollitia, ipsa, corrupti sint aut deserunt nulla doloremque sapiente.
-                        Quasi recusandae consequuntur expedita!</p>
+                    <h3>Licence de graduat en douane et accise BAC+3</h3>
+                    <p>
+                        J’ai suivi un parcours académique spécialisé en douane, accises et réglementation douanière, me
+                        permettant de comprendre en profondeur les procédures d’import/export, la fiscalité douanière,
+                        ainsi que la législation nationale et internationale liée aux échanges commerciaux.</p>
 
                 </div>
             </div>
@@ -105,10 +95,21 @@
                 <div class="timeline-date">2024
                 </div>
                 <div class="timeline-content">
-                    <h3>Certification Diplome de Licence En fiscalité Des entreprises</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil incidunt facilis quasi
-                        beatae fugiat quos nisi mollitia, ipsa, corrupti sint aut deserunt nulla doloremque sapiente.
-                        Quasi recusandae consequuntur expedita!</p>
+                    <h3>Certification Kinshasa Digital Academy KADEA</h3>
+                    <p>Développeur web et Mobile
+                        De l’analyse du besoin à la mise en ligne, en passant par l’interface et la base de données,
+                        le·la développeur·se web et web mobile conçoit et programme des applications web et mobile.!</p>
+
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025
+                </div>
+                <div class="timeline-content">
+                    <h3>Certification en marketing  </h3>
+                    <p>J'ai suivi une formation en marketing et stratégie commerciale qui m'a permis d'acquérir des compétences solides en analyse de marché, en élaboration de plans marketing, ainsi qu'en techniques de vente et de négociation. Cette formation m’a également appris à développer des stratégies commerciales efficaces pour accroître la visibilité d’une entreprise, attirer de nouveaux clients et fidéliser la clientèle existante. Elle m’a donné une vision globale du positionnement des
+                         produits/services sur le marché et de l’importance d’une communication cohérente et ciblée.</p>
                 </div>
             </div>
         </div>
@@ -194,31 +195,30 @@
             </div>
         </div>
     </section>
-
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="">
+        <form id="contactForm">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-
+                    <input type="text" id="fullName" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="Email">
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone number">
-                    <input type="text" placeholder="Subject">
-
+                    <input type="number" id="phoneNumber" placeholder="Phone number">
+                    <input type="text" id="subject" placeholder="Subject">
                 </div>
             </div>
-            <div class="input-group-2"><textarea name="" id="" cols="30" rows="10"
-                    placeholder="Your Message"></textarea>
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
-
+                <!-- Message est bienenvoye -->
+                <p id="formMessage"></p>
             </div>
         </form>
     </section>
+
     <footer class="footer">
-        <div class="social"> 
+        <div class="social">
             <a href="#"><i class='bx bxl-linkedin'></i></a>
             <a href="#"><i class='bx bxl-github'></i></a>
             <a href="#"><i class='bx bxl-instagram'></i></a>
