@@ -540,10 +540,15 @@ span {
     .wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centre horizontalement les items */
+        align-items: center;         /* Centre horizontalement les éléments */
+        justify-content: center;     /* Centre verticalement si nécessaire */
         gap: 1.5rem;
-        padding: 0 10px; /* Ajoute un peu de padding sur les côtés pour éviter que ça touche les bords */
+        padding: 0 15px;             /* Un peu plus de respiration sur les bords */
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;      /* Empêche les débordements */
     }
+    
 
     .testimonial-item {
         width: 100%;
