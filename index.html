@@ -58,7 +58,7 @@
 
         </div>
         <div class="home-img">
-            <img src="victoire.jpg" alt="">
+            <img src="me.jpg" alt="">
         </div>
     </section>
     <section class="education" id="education">
@@ -332,8 +332,31 @@
         </p>
     </footer>
 
+<!-- Firebase App -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<!-- Firestore -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyALCs9Sx5MwfD0U0Wu2WtOwUwHhiIHDYwE",
+    authDomain: "mydatebaseporto.firebaseapp.com",
+    projectId: "mydatebaseporto",
+    storageBucket: "mydatebaseporto.firebasestorage.app",
+    messagingSenderId: "691443942536",
+    appId: "1:691443942536:web:358ecea80f807292864b3d",
+    measurementId: "G-3RY7KDRC47"
+  };
+
+  // Initialisation Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
     <script src="script.js"></script>
+
+
+    
 </body>
 
 </html>
