@@ -2,6 +2,13 @@
 <html lang="fr">
 
 <head>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("service_kl9iieg"); // remplace par ton vrai User ID
+  })();
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victoire_Ilunga</title>
@@ -13,7 +20,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
-<!-- Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWLKR8K3N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YMWLKR8K3N');
+</script>
+    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -341,26 +357,6 @@
         </p>
     </footer>
 
-<!-- Firebase App -->
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-<!-- Firestore -->
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
-
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyALCs9Sx5MwfD0U0Wu2WtOwUwHhiIHDYwE",
-    authDomain: "mydatebaseporto.firebaseapp.com",
-    projectId: "mydatebaseporto",
-    storageBucket: "mydatebaseporto.firebasestorage.app",
-    messagingSenderId: "691443942536",
-    appId: "1:691443942536:web:358ecea80f807292864b3d",
-    measurementId: "G-3RY7KDRC47"
-  };
-
-  // Initialisation Firebase
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-</script>
 
     <script src="script.js"></script>
 
