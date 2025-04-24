@@ -316,6 +316,25 @@ span {
     margin: 5rem 0;
 }
 
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+}
+
+
 .education {
     padding: 100px 15px;
     background: var(--segond-bg-color);
